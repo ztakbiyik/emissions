@@ -1,0 +1,262 @@
+{
+  "Emissions": [
+ {
+  "Category": "Total w.out LULUCF",
+  "Gas Units": " CO2 (kt)",
+  "Value": 4200
+ },
+ {
+  "Category": "1.",
+  "Gas Units": "CH4 (kt)",
+  "Value": 8.2
+ },
+ {
+  "Category": "1.A",
+  "Gas Units": "Total ESD GHGs (ktCO2e)",
+  "Value": 21543
+ },
+ {
+  "Category": "1.A.1.",
+  "Gas Units": " N2O (kt)",
+  "Value": 0.44
+ },
+ {
+  "Category": "1.A.1.a.",
+  "Gas Units": "CH4 (kt)",
+  "Value": 0.43
+ },
+ {
+  "Category": "1.A.1.b.",
+  "Gas Units": "CO2 (kt)",
+  "Value": 335
+ },
+ {
+  "Category": "1.A.1.c.",
+  "Gas Units": "Total ETS GHGs (ktCO2e)",
+  "Value": 112
+ },
+ {
+  "Category": "1.A.2.",
+  "Gas Units": "CO2 (kt)",
+  "Value": 3527.23
+ },
+ {
+  "Category": " 1.A.3.",
+  "Gas Units": "Total GHGs (ktCO2e)",
+  "Value": 13900
+ },
+ {
+  "Category": "1.A.3.a.",
+  "Gas Units": "CH4 (kt)",
+  "Value": 0.00027
+ },
+ {
+  "Category": "1.A.3.b.",
+  "Gas Units": "N2O (kt)",
+  "Value": 0.5
+ },
+ {
+  "Category": "1.A.3.c.",
+  "Gas Units": "CO2 (kt)",
+  "Value": 108.45
+ },
+ {
+  "Category": "1.A.3.d.",
+  "Gas Units": "CO2 (kt)",
+  "Value": 231
+ },
+ {
+  "Category": "1.A.3.e.",
+  "Gas Units": "Total ETS GHGs (ktCO2e)",
+  "Value": 7.54
+ },
+ {
+  "Category": "1.A.4.",
+  "Gas Units": "N2O (kt)",
+  "Value": 0.32
+ },
+ {
+  "Category": "1.A.4.a.",
+  "Gas Units": "N2O (kt)",
+  "Value": 0.16
+ },
+ {
+  "Category": "1.A.4.b.",
+  "Gas Units": "CO2 (kt)",
+  "Value": 5511.87
+ },
+ {
+  "Category": "1.A.4.c.",
+  "Gas Units": "Total GHGs (ktCO2e)",
+  "Value": 805
+ },
+ {
+  "Category": "1.B.",
+  "Gas Units": "Total GHGs (ktCO2e)",
+  "Value": 20.84
+ },
+ {
+  "Category": "1.B.1.",
+  "Gas Units": "Total GHGs (ktCO2e)",
+  "Value": 17.23
+ },
+ {
+  "Category": "2.",
+  "Gas Units": "Total ESD GHGs (ktCO2e)",
+  "Value": 975.8
+ },
+ {
+  "Category": "2.A.",
+  "Gas Units": "Total ETS GHGs (ktCO2e)",
+  "Value": 2265
+ },
+ {
+  "Category": "2.A. non cement",
+  "Gas Units": "Total ETS GHGs (ktCO2e)",
+  "Value": 195.56
+ },
+ {
+  "Category": "2.D.",
+  "Gas Units": "CO2 (kt)",
+  "Value": 107.34
+ },
+ {
+  "Category": "2.E.",
+  "Gas Units": "SF6 (kt CO2e)",
+  "Value": 34.78
+ },
+ {
+  "Category": "2.F.",
+  "Gas Units": "Total GHGs (ktCO2e)",
+  "Value": 745.77
+ },
+ {
+  "Category": "2.G.",
+  "Gas Units": "N2O (kt)",
+  "Value": 0.152
+ },
+ {
+  "Category": "3.",
+  "Gas Units": "N2O (kt)",
+  "Value": 25
+ },
+ {
+  "Category": "3.A.",
+  "Gas Units": "CH4 (kt)",
+  "Value": 450
+ },
+ {
+  "Category": "3.B.",
+  "Gas Units": "Total ESD GHGs (ktCO2e)",
+  "Value": 1875
+ },
+ {
+  "Category": "3.D.",
+  "Gas Units": "Total ESD GHGs (ktCO2e)",
+  "Value": 6632.8
+ },
+ {
+  "Category": "3.G.",
+  "Gas Units": "CO2 (kt)",
+  "Value": 342.66
+ },
+ {
+  "Category": "3.H.",
+  "Gas Units": "Total GHGs (ktCO2e)",
+  "Value": 29.99
+ },
+ {
+  "Category": "4.",
+  "Gas Units": "Total GHGs (ktCO2e)",
+  "Value": 3170.44
+ },
+ {
+  "Category": "4.A.",
+  "Gas Units": "CH4 (kt)",
+  "Value": 3.256
+ },
+ {
+  "Category": "4.B",
+  "Gas Units": "CO2 (kt)",
+  "Value": -9.34
+ },
+ {
+  "Category": "4.C.",
+  "Gas Units": "N2O (kt)",
+  "Value": 1.76
+ },
+ {
+  "Category": "4.D.",
+  "Gas Units": "N2O (kt)",
+  "Value": 0.786
+ },
+ {
+  "Category": "4.E.",
+  "Gas Units": "N2O (kt)",
+  "Value": 0.008123
+ },
+ {
+  "Category": "4.F.",
+  "Gas Units": "CO2 (kt)",
+  "Value": 28.87
+ },
+ {
+  "Category": "5.",
+  "Gas Units": "CH4 (kt)",
+  "Value": 24.53
+ },
+ {
+  "Category": "5.A.",
+  "Gas Units": "CH4 (kt)",
+  "Value": 21.45
+ },
+ {
+  "Category": "5.B.",
+  "Gas Units": "Total ESD GHGs (ktCO2e)",
+  "Value": 37.87
+ },
+ {
+  "Category": "5.C.",
+  "Gas Units": "N2O (kt)",
+  "Value": 0.00136
+ },
+ {
+  "Category": "5.D.",
+  "Gas Units": "Total GHGs (ktCO2e)",
+  "Value": 179.77
+ },
+ {
+  "Category": "Memo items",
+  "Gas Units": "N2O (kt)",
+  "Value": 0.09737
+ },
+ {
+  "Category": "M.International bunkers",
+  "Gas Units": "CO2 (kt)",
+  "Value": 3043.88
+ },
+ {
+  "Category": "M.IB.Aviation",
+  "Gas Units": "CO2 (kt)",
+  "Value": 2627.98
+ },
+ {
+  "Category": "M.IB.Navigation",
+  "Gas Units": "N2O (kt)",
+  "Value": 0.012
+ },
+ {
+  "Category": "M.CO2 biomass",
+  "Gas Units": "Total GHGs (ktCO2e)",
+  "Value": 2796.76
+ },
+ {
+  "Category": "M.Intl. aviation EU ETS",
+  "Gas Units": "CO2 (kt)",
+  "Value": 2627.88
+ }
+],"data": {
+    "date": "2023",
+	"country": "Ireland"
+  }
+}

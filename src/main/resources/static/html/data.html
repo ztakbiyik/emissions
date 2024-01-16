@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emissions Data</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- Add your CSS styles or external stylesheet links here -->
+  <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+</head>
+<body>
+<h2>Emissions Data</h2>
+<p id="GFG_UP" style="font-size: 15px; font-weight: bold;">
+</p>
+
+<button onclick="getEmissions('#table')">
+  Click here to view emissions
+</button>
+
+<br><br>
+
+<table align="center" id="table" border="1">
+</table>
+
+
+<div>
+  <h3>Enter emission ID to delete</h3>
+  <label for="emissionId">Emission ID:</label>
+  <input type="text" id="emissionId" name="id" required>
+  <button onclick="deleteEmission()">Delete</button>
+</div>
+
+<hr>
+<h3>Enter details to make changes:</h3>
+<label for="updateEmissionId">Emission ID:</label>
+<input type="text" id="updateEmissionId" name="id" required>
+
+<label for="emissionCategory">Category:</label>
+<input type="text" id="emissionCategory" name="category" required>
+
+<label for="gasUnits">Gas units:</label>
+<input type="text" id="gasUnits" name="gasUnits" required>
+
+<label for="description">Description:</label>
+<input type="text" id="description" name="description" required>
+
+<label for="predictedValue">Predicted value:</label>
+<input type="text" id="predictedValue" name="predictedValue" required>
+
+<label for="actualValue">Actual value:</label>
+<input type="text" id="actualValue" name="actualValue" required>
+
+<button onclick="updateEmissions()">Update</button>
+
+
+<hr>
+
+<script>
+  async function deleteEmission() {
+    alert("Data deleted");
+    var id = document.getElementById("emissionId").value;
+    const emissionid = {id};
+    const json = JSON.stringify(emissionid);
+    const res = await axios.delete('http://localhost:8998/users/emission/' + id, emissionid, {
+      headers: {
+        "Cache-Control": "no-cache",
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": true
+      },
+    });
+  }
+    async function updateEmissions() {
+      alert("Data updated");
+      var id = document.getElementById("updateEmissionId").value;
+      var category = document.getElementById("emissionCategory").value;
+      var gasUnits = document.getElementById("gasUnits").value;
+      var description = document.getElementById("description").value;
+      var predictedValue = document.getElementById("predictedValue").value;
+      var actualValue = document.getElementById("actualValue").value;
+      const emission = {category, gasUnits, description, predictedValue, actualValue};
+      const json = JSON.stringify(emission);
+      const res = await axios.post('http://localhost:8998/users/emission/update/' + id, emission, {
+        headers: {
+          "Cache-Control": "no-cache",
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": true
+        },
+      });
+    }
+ async function getEmissions(selector) {
+    let list = [];
+    const res = axios.get('http://localhost:8998/users/emission', {
+      headers: {
+        "Cache-Control": "no-cache",
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": true
+      },
+    }).then(response => {
+      console.log(response.data.entity);
+      list = response.data.entity;
+      constructTable(selector, list);
+    });
+    return list;
+  }
+
+
+
+  function constructTable(selector, list) {
+
+    // Getting the all column names
+    let cols = Headers(list, selector);
+
+    // Traversing the JSON data
+    for (let i = 0; i < list.length; i++) {
+      let row = $('<tr/>');
+      for (let colIndex = 0; colIndex < cols.length; colIndex++) {
+        let val = list[i][cols[colIndex]];
+
+        // If there is any key, which is matching
+        // with the column name
+        if (val == null) val = "";
+        row.append($('<td/>').html(val));
+      }
+
+      // Adding each row to the table
+      $(selector).append(row);
+    }
+  }
+
+  function Headers(list, selector) {
+    let columns = [];
+    let header = $('<tr/>');
+
+    for (let i = 0; i < list.length; i++) {
+      let row = list[i];
+
+      for (let k in row) {
+        if ($.inArray(k, columns) == -1) {
+          columns.push(k);
+
+          // Creating the header
+          header.append($('<th/>').html(k));
+        }
+      }
+    }
+
+    // Appending the header to the table
+    $(selector).append(header);
+    return columns;
+  }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+
+
+</body>
+</html>
